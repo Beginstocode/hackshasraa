@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver - Bus Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tracker-body">
+
+    <div id="driver-container">
+        <header>
+            <h2>Driver Portal</h2>
+            <button id="start-sharing-btn">Start Sharing Location</button>
+            <button id="stop-sharing-btn" class="hidden">Stop Sharing</button>
+        </header>
+        <div class="info-card">
+            <p><strong>Status:</strong> <span id="sharing-status">Sharing is Off</span></p>
+            <p><strong>Bus Number:</strong> <span>101</span></p>
+            <p><strong>Current Coordinates:</strong> <span id="current-coords">N/A</span></p>
+        </div>
+        <div id="driver-map"></div>
+        <a href="index.html" class="back-link">← Go back</a>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

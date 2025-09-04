@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passenger - Live Bus Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="tracker-body">
+
+    <div id="tracker-container">
+        <aside id="sidebar">
+            <header>
+                <h2>Smart Bus Tracker</h2>
+            </header>
+            <div id="search-card">
+                <h3>Find Your Bus</h3>
+                <input type="text" id="bus-search-input" placeholder="Enter Bus Number (e.g., 101)">
+                <button id="search-btn">Search</button>
+            </div>
+            <div id="bus-info-card">
+                <h3>Bus Information</h3>
+                <p><strong>Bus No:</strong> <span id="bus-number">--</span></p>
+                <p><strong>Status:</strong> <span id="bus-status">Searching for bus...</span></p>
+                <p><strong>Seats:</strong> <span id="available-seats">--</span></p>
+                <p><strong>Next Stop:</strong> <span id="next-stop">--</span></p>
+                <p><strong>Arrival:</strong> <span id="eta">--</span></p>
+            </div>
+            <a href="index.html" class="back-link">← Logout</a>
+        </aside>
+        <main id="main-content">
+            <div id="map"></div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
